@@ -8,10 +8,12 @@ import {
 
 import { Task } from '../models/task';
 
-// import { Observable } from 'rxjs/Observable';
 
-// @Injectable()
+@Injectable()
 
-// get() {
-//   return this.tasks; 
-// }
+
+
+getPublis(); {
+  
+}
+return this.publis; 
