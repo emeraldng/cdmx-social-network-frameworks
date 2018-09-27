@@ -1,0 +1,40 @@
+.example-container {
+    max-width: 960px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.mat-card,
+.card {
+    display: block;
+    margin: 0 auto;
+    width: 480px;
+}
+
+.card {
+    padding: 30px 45px;
+}
+
+.mat-button {
+    padding: 5px 25px;
+    color: #fff;
+    margin: 5px 0;
+}
+
+#regoBtn {
+    padding: 1px 2px;
+}
+
+#fbBtn {
+    width: 214px;
+    /* padding: 5px 12px; */
+}
+
+.socialBtns {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    .fa {
+        padding-right: 10px;
+    }
+}

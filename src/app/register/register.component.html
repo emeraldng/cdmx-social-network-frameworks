@@ -1,3 +1,36 @@
-<p>
-  register works!
-</p>
+<div class="container mt-5">
+  <h2 class="text-center">Sign up with firebase</h2>
+  <div class="card">
+    <form [formGroup]="registerForm">
+      <p class="h5 text-center mb-4">Sign Up</p>
+      <div class="md-form">
+        <i class="fa fa-envelope prefix grey-text"></i>
+        <input type="text" formControlName="email" id="email" class="form-control" mdbInputDirective>
+        <label for="email">Your email</label>
+      </div>
+      <div class="md-form">
+        <i class="fa fa-lock prefix grey-text"></i>
+        <input type="password" formControlName="password" id="password" class="form-control" mdbInputDirective>
+        <label for="password">Your password</label>
+      </div>
+      <label class="error">{{errorMessage}}</label>
+      <label class="success">{{successMessage}}</label>
+      <div class="text-center">
+        <input id="btn" (click)="tryRegister(registerForm.value)" mdbBtn color="deep-orange" class="waves-light" value="Sign up"
+          mdbWavesEffect>
+      </div>
+      <div class="socialBtns">
+        <button id="fbBtn" (click)="tryFacebookLogin()" style="background-color: #3B5998; margin-top: 20px" mat-button>
+          <i class="fa fa-facebook fa-2x"></i> Sign up with FaceBook</button>
+        <br>
+        <button id="ggBtn" (click)="tryGoogleLogin()" style="background-color:  #dd4b39;" mat-button><i class="fa fa-google fa-2x"></i>
+          Sign up with Google</button>
+        <br>
+        <!-- <button id="twBtn" (click)="tryTwitterLogin()" style="background-color: #1DA1F2" mat-button><i class="fa fa-twitter fa-2x"></i>
+          Sign up with Twitter</button> -->
+        <br><br> or already have an account
+        <a style="margin-right:130px; color:blue;" routerLink="/login">Login</a>
+      </div>
+    </form>
+  </div>
+</div>
