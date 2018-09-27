@@ -63,7 +63,7 @@ export class RegisterComponent {
       res => {
         console.log(res);
         this.errorMessage = '';
-        this.successMessage = 'Your account has been created';
+        this.successMessage = 'Tu cuenta ha sido creada, ya puedes inciar sesión';
       },
       err => {
         console.log(err);
