@@ -1,20 +1,3 @@
-// import { Component, OnInit } from '@angular/core';
-
-// @Component({
-//   selector: 'app-login',
-//   templateUrl: './login.component.html',
-//   styleUrls: ['./login.component.scss']
-// })
-// export class LoginComponent implements OnInit {
-
-//   constructor() { }
-
-//   ngOnInit() {
-//   }
-
-// }
-
-
 import { Router } from '@angular/router';
 import { AuthService } from './../shared/auth.service';
 import { Component, Input } from '@angular/core';
@@ -84,9 +67,4 @@ export class LoginComponent {
     });
   }
 
-  // tryTwitterLogin() {
-  //   this.authService.doTwitterLogin().then(res => {
-  //     this.router.navigate(['/muro']);
-  //   });
-  // }
 }

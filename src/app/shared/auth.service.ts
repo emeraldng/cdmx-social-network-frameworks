@@ -42,6 +42,10 @@ export class AuthService {
     });
   }
 
+  // doGoogleLogin() {
+  //   this.auth
+  // }
+
   doRegister(value) {
     return new Promise<any>((resolve, reject) => {
       firebase

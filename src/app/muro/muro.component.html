@@ -1,9 +1,9 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row>
-    <span>Firebase Auth App</span>
+    <span>Usuario: {{user.name}}</span>
     <span class="example-spacer"></span>
 
-    <span style="font-size:12px; padding-right: 10px;"><a (click)="logout()">Logout </a></span>
+    <span style="font-size:12px; padding-right: 10px;"><a (click)="logout()">Salir</a></span>
     <img style="height:40px;" mat-card-avatar [src]="user.image" class="example-header-image" />
     <i [hidden]="user" class="material-icons">
       account_circle
@@ -13,6 +13,5 @@
 </mat-toolbar>
 <div class="card-body">
   <h4>{{user.name}}</h4>
-  <p style="font-size:14px;" class="card-text">Welcome good to see you, Social Authentication using Firebase in an Angular
-    6 web app. </p>
+  <p style="font-size:14px;" class="card-text">¡Bienvenidx! Rercuerda: No emitir juicios negativos, ser tolerante y respetuoso. Empaticemos </p>
 </div>
