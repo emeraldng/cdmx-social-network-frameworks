@@ -40,7 +40,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { AuthGuard } from './shared/auth.guard';
 import { AuthService } from './shared/auth.service';
-// import { MaterialModule } from './shared/material';
+import { MaterialModule } from './shared/material';
 import { UserResolver } from './shared/user.resolver';
 import { UserService } from './shared/user.service';
 // import { UserComponent } from './user/user.component';
@@ -64,7 +64,7 @@ import { MuroComponent } from './muro/muro.component';
       enabled: environment.production
     }),
     BrowserAnimationsModule,
-    // MaterialModule,
+    MaterialModule,
     AngularFireAuthModule,
     AngularFirestoreModule,
     AngularFireModule.initializeApp(environment.firebase)

@@ -23,7 +23,7 @@ const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
   { path: 'login', component: LoginComponent, canActivate: [AuthGuard] }, // p
   { path: 'register', component: RegisterComponent, canActivate: [AuthGuard] },  // p
-  { path: 'user', component: MuroComponent, resolve: { data: UserResolver } }  // p
+  { path: 'muro', component: MuroComponent, resolve: { data: UserResolver } }  // p
 ];
 
 @NgModule({

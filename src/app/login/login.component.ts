@@ -63,7 +63,7 @@ export class LoginComponent {
   tryLogin(value) {
     this.authService.doLogin(value).then(
       res => {
-        this.router.navigate(['/user']);
+        this.router.navigate(['/muro']);
       },
       err => {
         console.log(err);
@@ -74,19 +74,19 @@ export class LoginComponent {
 
   tryFacebookLogin() {
     this.authService.doFacebookLogin().then(res => {
-      this.router.navigate(['/user']);
+      this.router.navigate(['/muro']);
     });
   }
 
   tryGoogleLogin() {
     this.authService.doGoogleLogin().then(res => {
-      this.router.navigate(['/user']);
+      this.router.navigate(['/muro']);
     });
   }
 
   // tryTwitterLogin() {
   //   this.authService.doTwitterLogin().then(res => {
-  //     this.router.navigate(['/user']);
+  //     this.router.navigate(['/muro']);
   //   });
   // }
 }

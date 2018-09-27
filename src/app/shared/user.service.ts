@@ -12,7 +12,7 @@ export class UserService {
 
   getCurrentUser() {
     return new Promise<any>((resolve, reject) => {
-      const user = firebase.auth().onAuthStateChanged(function(user) {
+      const user = firebase.auth().onAuthStateChanged(function() {
         if (user) {
           resolve(user);
         } else {
