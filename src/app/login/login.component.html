@@ -16,11 +16,11 @@
         <label class="error">{{errorMessage}}</label>
       </div>
       <div class="text-center">
-        <input id="btn" (click)="tryLogin(loginForm.value)" mdbBtn color="deep-orange" class="waves-light" value="Login" mdbWavesEffect>
+        <button id="btn" (click)="tryLogin(loginForm.value)" mdbBtn color="deep-orange" class="waves-light" value="Login" mdbWavesEffect>Login</button>
       </div>
       <div class="socialBtns">
         <button id="fbBtn" (click)="tryFacebookLogin()" style="background-color: #3B5998; margin-top: 20px" mat-button>
-          <i class="fa fa-facebook fa-2x"></i> Inicio  de Sesión FB </button>
+          <i class="fa fa-facebook fa-2x"></i> Inicio  de Sesión FB! </button>
         <br>
         <button id="ggBtn" (click)="tryGoogleLogin()" style="background-color:  #dd4b39;" mat-button><i class="fa fa-google fa-2x"></i>
           Inicio de Sesión Google</button>
