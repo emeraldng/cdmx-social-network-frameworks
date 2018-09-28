@@ -17,7 +17,7 @@ export class LoginComponent {
   loginForm: FormGroup;
   email;
 
-  // MD-Bootstrap Form
+  // MD-Bootstrap Form--a
   constructor(
     private fb: FormBuilder,
     public authService: AuthService,
