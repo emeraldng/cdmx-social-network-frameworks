@@ -19,6 +19,8 @@ import { UserResolver } from './shared/user.resolver';
 import { UserService } from './shared/user.service';
 // import { UserComponent } from './user/user.component';
 import { MuroComponent } from './muro/muro.component';
+import { PostComponent } from './muro/post/post.component';
+import { AddPostComponent } from './muro/add-post/add-post.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { MuroComponent } from './muro/muro.component';
     LoginComponent,
     RegisterComponent,
     // UserComponent,
-    MuroComponent
+    MuroComponent,
+    PostComponent,
+    AddPostComponent
   ],
   imports: [
     BrowserModule,
