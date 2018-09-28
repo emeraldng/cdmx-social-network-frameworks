@@ -1,19 +1,3 @@
-// import { Component, OnInit } from '@angular/core';
-
-// @Component({
-//   selector: 'app-muro',
-//   templateUrl: './muro.component.html',
-//   styleUrls: ['./muro.component.scss']
-// })
-// export class MuroComponent implements OnInit {
-
-//   constructor() { }
-
-//   ngOnInit() {
-//   }
-
-// }
-
 import { AuthService } from './../shared/auth.service';
 import { UserService } from './../shared/user.service';
 import { FirebaseUserModel } from './../shared/user.model';
