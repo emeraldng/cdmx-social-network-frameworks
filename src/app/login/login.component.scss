@@ -1,7 +1,7 @@
 .image {
   height: 40em;
-  background-size: cover;
-  width: auto;
+  background-size: 100%;
+  width: 100%;
   background-image: url('https://si.wsj.net/public/resources/images/BN-XC483_BONDS0_M_20180122073010.jpg');
   background-position: 50% 50%;
 }
@@ -11,6 +11,12 @@
   max-width: 900px;
   margin: 50px auto;
   text-align: center;
+}
+
+.text-white {
+    color: #fff !important;
+    text-align: center;
+    background-color: #112B3C;
 }
 
 .mat-card,
