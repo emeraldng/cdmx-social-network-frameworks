@@ -1,45 +1,55 @@
+.image {
+  height: 40em;
+  background-size: cover;
+  width: auto;
+  background-image: url('https://si.wsj.net/public/resources/images/BN-XC483_BONDS0_M_20180122073010.jpg');
+  background-position: 50% 50%;
+}
+
 .example-container {
-    max-width: 960px;
-    margin: 50px auto;
-    text-align: center;
+    //width: auto;
+  max-width: 900px;
+  margin: 50px auto;
+  text-align: center;
 }
 
 .mat-card,
 .card {
-    display: block;
-    margin: 0 auto;
-    width: 480px;
-    padding-bottom: 60px;
+  display: block;
+  margin: 0 auto;
+  width: 435px;
+  padding-bottom: 60px;
 }
 
 .card {
-    padding: 30px 45px;
+  padding: 30px 45px;
 }
 
 .mat-button {
-    padding: 5px 25px;
-    color: #fff;
-    margin: 5px 0;
+  padding: 5px 25px;
+  color: #fff;
+  margin: 5px 0;
 }
 
 #logBtn {
-    padding: 1px 2px;
+  padding: 1px 2px;
 }
 
 #fbBtn {
-    width: 200px;
-    /* padding: 5px 10px; */
+  width: 200px;
+  /* padding: 5px 10px; */
 }
 
 .socialBtns {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    .fa {
-        padding-right: 10px;
-    }
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+
+  .fa {
+    padding-right: 10px;
+  }
 }
 
 mat-grid-tile {
-    background: lightblue;
+  background: lightblue;
 }
