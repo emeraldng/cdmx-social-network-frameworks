@@ -18,8 +18,10 @@ import { MaterialModule } from './shared/material';
 import { UserResolver } from './shared/user.resolver';
 import { UserService } from './shared/user.service';
 import { MuroComponent } from './muro/muro.component';
-import { PostComponent } from './muro/post/post.component';
-import { AddPostComponent } from './muro/add-post/add-post.component';
+// import { PostComponent } from './muro/post/post.component';
+// import { AddPostComponent } from './muro/add-post/add-post.component';
+import { PostComponent } from './post/post.component';
+import { PostListComponent } from './post-list/post-list.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,8 @@ import { AddPostComponent } from './muro/add-post/add-post.component';
     RegisterComponent,
     MuroComponent,
     PostComponent,
-    AddPostComponent
+    // AddPostComponent,
+    PostListComponent
   ],
   imports: [
     BrowserModule,

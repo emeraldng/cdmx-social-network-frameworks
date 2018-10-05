@@ -1,6 +1,6 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row>
-    <span>Meeus, red social llena de empatía.</span>
+    <span>Meeus, red de empatía.</span>
     <span class="example-spacer"></span>
 
     <span style="font-size:12px; padding-right: 10px;"><a (click)="logout()">Salir</a></span>
@@ -18,7 +18,12 @@
     Empaticemos </p>
 </div>
 
-<div class="card text-center">
+<div class="container">
+  <app-post></app-post>
+  <app-post-list></app-post-list>
+</div>
+
+<!-- <div class="card text-center">
     <div class="card-header">
       Comparte tus pensamientos :
     </div>
@@ -70,4 +75,4 @@
         <button style="background-color:#17a2b8; margin-top: 10px" mat-button>Editar</button>
         <button style="background-color:#dc3545; margin-top: 10px" mat-button>Borrar</button>
     </div>
-</div>
+</div> -->
