@@ -1,3 +1,20 @@
-<p>
-  post-list works!
-</p>
+<div>
+  
+    <ng-container *ngFor="let post of postArray">
+      <div class="card">
+        <div class="card-body">
+          <p>{{post.texto}}</p>
+
+
+          <button style="background-color:#17a2b8; margin-top: 10px" mat-button (click)="postService.populateForm(post)">Editar</button> <span></span>
+          <button style="background-color:#dc3545; margin-top: 10px" mat-button (click)="onDelete(post.$key)">Borrar</button>
+
+        </div>
+      </div>
+    </ng-container>
+</div>
+
+
+<div class="alert alert-danger" *ngIf="showDeletedMessage">
+    Post Eliminado.
+  </div>

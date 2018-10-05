@@ -1,10 +1,13 @@
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+// forms
+// import { FormGroup, FormControl } from '@angular/forms';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { environment } from '../environments/environment';
@@ -22,6 +25,8 @@ import { MuroComponent } from './muro/muro.component';
 // import { AddPostComponent } from './muro/add-post/add-post.component';
 import { PostComponent } from './post/post.component';
 import { PostListComponent } from './post-list/post-list.component';
+import { PostService } from './shared/post.service';
+
 
 @NgModule({
   declarations: [
@@ -39,6 +44,9 @@ import { PostListComponent } from './post-list/post-list.component';
     MDBBootstrapModule.forRoot(),
     FormsModule,
     ReactiveFormsModule,
+    
+    // FormGroup, 
+    // FormControl,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production
     }),
@@ -46,9 +54,10 @@ import { PostListComponent } from './post-list/post-list.component';
     MaterialModule,
     AngularFireAuthModule,
     AngularFirestoreModule,
-    AngularFireModule.initializeApp(environment.firebase)
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule
   ],
-  providers: [AuthService, UserService, UserResolver, AuthGuard],
+  providers: [AuthService, UserService, UserResolver, AuthGuard, PostService],
   schemas: [NO_ERRORS_SCHEMA],
   bootstrap: [AppComponent]
 })
